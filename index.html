@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Derecho de los Tilines</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1><i>Malla Curricular Derecho de los Tilines</i></h1>
+  <div class="malla">
+    <!-- Ejemplo con dos semestres y 3 ramos por semestre -->
+    <div class="semestre" data-semestre="1">
+      <button class="ramo activo" onclick="activar(this, 2)">Introducción al Derecho</button>
+      <button class="ramo activo" onclick="activar(this, 2)">Historia del Derecho</button>
+      <button class="ramo activo" onclick="activar(this, 2)">Derecho Romano</button>
+    </div>
+    <div class="semestre" data-semestre="2">
+      <button class="ramo" onclick="activar(this, 3)">Derecho Civil I</button>
+      <button class="ramo" onclick="activar(this, 3)">Derecho Penal I</button>
+      <button class="ramo" onclick="activar(this, 3)">Derecho Constitucional</button>
+    </div>
+    <div class="semestre" data-semestre="3">
+      <button class="ramo" onclick="activar(this, 4)">Derecho Civil II</button>
+      <button class="ramo" onclick="activar(this, 4)">Derecho Penal II</button>
+      <button class="ramo" onclick="activar(this, 4)">Derecho Procesal I</button>
+    </div>
+    <!-- Puedes agregar más semestres copiando el bloque -->
+  </div>
 
+  <script src="script.js"></script>
+</body>
+</html>
